@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>tbl_structure.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module.exports_module.exports.html">exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html">PmaVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getGlobalVars">getGlobalVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getMessages">getMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getTimePickerVars">getTimePickerVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getValidatorMessages">getValidatorMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setAllMessages">setAllMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setGlobalVars">setGlobalVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setTimePickerVars">setTimePickerVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setValidatorMessages">setValidatorMessages</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-CommonParams.html">CommonParams</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~getUrlQuery">getUrlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~set">set</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~setAll">setAll</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-variables_global_variables.html">variables/global_variables</a></span></li><li class="nav-heading">Namespaces</li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleBookmarks%250AConsole%2520bookmarks%2520card,%2520and%2520bookmarks%2520items%2520management%2520object.html">ConsoleBookmarks
+Console bookmarks card, and bookmarks items management object</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleDebug.html">ConsoleDebug</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleInput.html">ConsoleInput</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleMessages.html">ConsoleMessages</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleResizer.html">ConsoleResizer</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$after_field_item">$after_field_item</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$allTr">$allTr</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$curr_row">$curr_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$editArea">$editArea</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$last_checkbox">$last_checkbox</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$last_row">$last_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$retval">$retval</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$td">$td</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$this_anchor">$this_anchor</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$thisField">$thisField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_keydown">_keydown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mousedown">_mousedown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mousemove">_mousemove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mouseup">_mouseup</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addDateTimePicker">addDateTimePicker</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addUserPreferenceFiles">addUserPreferenceFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ajaxMessageCount">ajaxMessageCount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#aliasSelectHandler">aliasSelectHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#appendQuery">appendQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#array">array</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#array,">array,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#BaseChart">BaseChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindCodeMirrorToInlineEditor">bindCodeMirrorToInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#blur">blur</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#bool">bool</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#bool,">bool,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#browseForeignDialog">browseForeignDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#button_options">button_options</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#buttonOptions">buttonOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#changePluginOpts">changePluginOpts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#Chart">Chart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#ChartFactory">ChartFactory</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ChartType">ChartType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkAddUser">checkAddUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkFieldDefault">checkFieldDefault</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkForCheckbox">checkForCheckbox</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkIndexName">checkIndexName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkIndexType">checkIndexType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkNewCode">checkNewCode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkPassword">checkPassword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkPasswordStrength">checkPasswordStrength</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkSqlQuery">checkSqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#collapse">collapse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#collapseTreeNode">collapseTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#columnCount">columnCount</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ColumnType">ColumnType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#configGet">configGet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#configSet">configSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#confirmLink">confirmLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#confirmQuery">confirmQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Console">Console</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createAliasModal">createAliasModal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createPrintAndBackButtons">createPrintAndBackButtons</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createTemplate">createTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_column_name">curr_column_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row">curr_last_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row_index">curr_last_row_index</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row_index_string">curr_last_row_index_string</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_row">curr_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_rows">curr_rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_table_name">curr_table_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#currValue">currValue</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#DataTable">DataTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#daysInFebruary">daysInFebruary</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#defaultValues">defaultValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteTemplate">deleteTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#disableDumpSomeRowsSubOptions">disableDumpSomeRowsSubOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#dismissable">dismissable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#displayErrors">displayErrors</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#displayPasswordGenerateButton">displayPasswordGenerateButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#editVariable">editVariable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#emptyCheckTheField">emptyCheckTheField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#enableDumpSomeRowsSubOptions">enableDumpSomeRowsSubOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ErrorReport">ErrorReport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#escapeHtml">escapeHtml</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#escapeJsString">escapeJsString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#execute">execute</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#expandTreeNode">expandTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fieldName">fieldName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#filterVariables">filterVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#focus">focus</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fullSqlQuery">fullSqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fulltext_indexes">fulltext_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fullWhereClause">fullWhereClause</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#function">function</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getAllValues">getAllValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getDropdownValues">getDropdownValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldName">getFieldName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldType">getFieldType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldValidators">getFieldValidators</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldValue">getFieldValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getForeignKeyCheckboxLoader">getForeignKeyCheckboxLoader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getHistory">getHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIdPrefix">getIdPrefix</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIndexPage">getIndexPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getPos">getPos</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getSymbol">getSymbol</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTemplateData">getTemplateData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getText">getText</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#GlobalVariables">GlobalVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#hash">hash</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#indexes">indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initialize">initialize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initTableSorter">initTableSorter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#insertQuery">insertQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#insertValueQuery">insertValueQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#int">int</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#int,">int,</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#is_view">is_view</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isNull">isNull</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#isStorageSupported">isStorageSupported</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isUnique">isUnique</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotAreaChart">JQPlotAreaChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotBarChart">JQPlotBarChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotChart">JQPlotChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotChartFactory">JQPlotChartFactory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotColumnChart">JQPlotColumnChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotLineChart">JQPlotLineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotPieChart">JQPlotPieChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotScatterChart">JQPlotScatterChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotSplineChart">JQPlotSplineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotTimelineChart">JQPlotTimelineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#JqueryValidations">JqueryValidations</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_click_checked">last_click_checked</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_clicked_row">last_clicked_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_shift_clicked_row">last_shift_clicked_row</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadChildNodes">loadChildNodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadCommonFiles">loadCommonFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadTemplate">loadTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loafIndexFiles">loafIndexFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#makeProfilingChartInlineFunctionforcreatingprofilingchartonclickingprofilingcheckbox">makeProfilingChartInline Function for creating profiling chart
+on clicking profiling checkbox</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#markField">markField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#matchFile">matchFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#MenuResizer">MenuResizer</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#methods">methods</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#MicroHistory">MicroHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mousedown">mousedown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mousemove">mousemove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mouseup">mouseup</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#mysql_doc_keyword">mysql_doc_keyword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navFilterStateRestore">navFilterStateRestore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navFilterStateUpdate">navFilterStateUpdate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navTreeStateUpdate">navTreeStateUpdate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#new_last_row_id">new_last_row_id</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#new_last_row_index">new_last_row_index</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#nullify">nullify</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Number">Number</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#object">object</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Object">Object</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#object,">object,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#offerPrefsAutoimport">offerPrefsAutoimport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onload">onload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onload2">onload2</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadCreateTable">onloadCreateTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadDbTracking">onloadDbTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadImport">onloadImport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadIndexes">onloadIndexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadPageSettings">onloadPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerDatabases">onloadServerDatabases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerPlugins">onloadServerPlugins</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerPrivileges">onloadServerPrivileges</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusAdvisor">onloadServerStatusAdvisor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusProcesses">onloadServerStatusProcesses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusVariables">onloadServerStatusVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerUserGroups">onloadServerUserGroups</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerVariables">onloadServerVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadSqlEditor">onloadSqlEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadSqlInlineEditor">onloadSqlInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblChange">onloadTblChange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblFindReplace">onloadTblFindReplace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblOperations">onloadTblOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblStructueDropdown">onloadTblStructueDropdown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblTracking">onloadTblTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PieChart">PieChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_addColumnToIndex">PMA_addColumnToIndex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_adjustTotals">PMA_adjustTotals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ajaxRemoveMessage">PMA_ajaxRemoveMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ajaxShowMessage">PMA_ajaxShowMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_autosaveSQL">PMA_autosaveSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_autosaveSQLSort">PMA_autosaveSQLSort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_changeClassForColumn">PMA_changeClassForColumn</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_checkIfDataTypeNumericOrDate">PMA_checkIfDataTypeNumericOrDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_checkReservedWordColumns">PMA_checkReservedWordColumns</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#PMA_commonActions">PMA_commonActions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_disableNaviSettings">PMA_disableNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_add">PMA_doc_add</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_builtin">PMA_doc_builtin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_keyword">PMA_doc_keyword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ensureNaviSettings">PMA_ensureNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_fetchRealRowCount">PMA_fetchRealRowCount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getCellValue">PMA_getCellValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getCompositeIndexList">PMA_getCompositeIndexList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getImage">PMA_getImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getIndexArray">PMA_getIndexArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getSQLEditor">PMA_getSQLEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_handleSimulateQueryButton">PMA_handleSimulateQueryButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowConnection">PMA_hideShowConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowDefaultValue">PMA_hideShowDefaultValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowExpression">PMA_hideShowExpression</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_highlightSQL">PMA_highlightSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_indexTypeSelectionDialog">PMA_indexTypeSelectionDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_init_slider">PMA_init_slider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_makegrid">PMA_makegrid</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#PMA_Messages">PMA_Messages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_navigationTreePagination">PMA_navigationTreePagination</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_prepareForAjaxRequest">PMA_prepareForAjaxRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_previewSQL">PMA_previewSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_reloadNavigation">PMA_reloadNavigation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_removeColumnFromIndex">PMA_removeColumnFromIndex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_set_status_label">PMA_set_status_label</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_setIndexFormParameters">PMA_setIndexFormParameters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showAddIndexDialog">PMA_showAddIndexDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showFullName">PMA_showFullName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showHints">PMA_showHints</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showNoticeForEnum">PMA_showNoticeForEnum</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showThisQuery">PMA_showThisQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_sprintf">PMA_sprintf</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_tooltip">PMA_tooltip</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_updateCode">PMA_updateCode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_urldecode">PMA_urldecode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_urlencode">PMA_urlencode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_verifyColumnsProperties">PMA_verifyColumnsProperties</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#postParams">postParams</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#primary_indexes">primary_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#printPage">printPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#printPreview">printPreview</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#processList">processList</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#question">question</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#random_server_id">random_server_id</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationalDisplay">relationalDisplay</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationCurrValue">relationCurrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationFields">relationFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationKeyOrDisplayColumn">relationKeyOrDisplayColumn</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relFieldsList">relFieldsList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#reloadFieldForm">reloadFieldForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeColumnFromMultiSort">removeColumnFromMultiSort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removePrintAndBackButton">removePrintAndBackButton</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ResizeHandler">ResizeHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#restoreField">restoreField</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#rows">rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Rows">Rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#RTE">RTE</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#savePrefsToLocalStorage">savePrefsToLocalStorage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#ScatterChart">ScatterChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#scrollToView">scrollToView</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#selected_dbs">selected_dbs</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#self_closing">self_closing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setDropdownValues">setDropdownValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setFieldValue">setFieldValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setQuery">setQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setRestoreDefaultBtn">setRestoreDefaultBtn</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setShowThisQuery">setShowThisQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setTab">setTab</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setText">setText</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#SetUrlHash">SetUrlHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setWidth">setWidth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#show_hide_clauses">show_hide_clauses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showHistory">showHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showInstructions">showInstructions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showNaviSettings">showNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showPageSettings">showPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showSettings">showSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#spatial_indexes">spatial_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#sql_autocomplete_in_progress">sql_autocomplete_in_progress</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#sqlQuery">sqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#string">string</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#string,">string,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#suggestPassword">suggestPassword</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#table_body">table_body</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#tables_table">tables_table</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#target_rows">target_rows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teadownFunctions">teadownFunctions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardown1">teardown1</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownConfig">teardownConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownCreateTable">teardownCreateTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownCtrlEnterFormSubmit">teardownCtrlEnterFormSubmit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbCentralColumns">teardownDbCentralColumns</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbOperations">teardownDbOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbSearch">teardownDbSearch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbStructure">teardownDbStructure</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbTracking">teardownDbTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownExport">teardownExport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownImport">teardownImport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownIndexes">teardownIndexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownPageSettings">teardownPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerDatabases">teardownServerDatabases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerPrivileges">teardownServerPrivileges</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusAdvisor">teardownServerStatusAdvisor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusProcesses">teardownServerStatusProcesses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusQueries">teardownServerStatusQueries</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusVariables">teardownServerStatusVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerUserGroups">teardownServerUserGroups</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerVariables">teardownServerVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownSqlInlineEditor">teardownSqlInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownSqlQueryExecute">teardownSqlQueryExecute</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblChange">teardownTblChange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblFindReplace">teardownTblFindReplace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblOperations">teardownTblOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblRelation">teardownTblRelation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblSelect">teardownTblSelect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblStructure">teardownTblStructure</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblTracking">teardownTblTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#the_form">the_form</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#this_name">this_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#thisFieldParams">thisFieldParams</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#TimelineChart">TimelineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#timePicker">timePicker</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleDatepickerIfInvalid">toggleDatepickerIfInvalid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleQuickOrCustom">toggleQuickOrCustom</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleSaveToFile">toggleSaveToFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleSqlIncludeComments">toggleSqlIncludeComments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleStructureDataOpts">toggleStructureDataOpts</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformationFields">transformationFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformFields">transformFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformFieldsList">transformFieldsList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#traverseNavigationForPaths">traverseNavigationForPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#treeResize">treeResize</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#unique_indexes">unique_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updatePrefsDate">updatePrefsDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateQueryParameters">updateQueryParameters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateTemplate">updateTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#validate">validate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_field">validate_field</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_field_and_fieldset">validate_field_and_fieldset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_fieldset">validate_fieldset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validateField">validateField</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#whereClause">whereClause</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">tbl_structure.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* vim: set expandtab sw=4 ts=4 sts=4: */
+import { PMA_Messages as PMA_messages } from './variables/export_variables';
+import Indexes from './utils/IndexEnum';
+import PMA_commonParams from './variables/common_params';
+import { PMA_ajaxShowMessage, PMA_ajaxRemoveMessage } from './utils/show_ajax_messages';
+import { PMA_highlightSQL } from './utils/sql';
+import { PMA_prepareForAjaxRequest } from './functions/AjaxRequest';
+import { PMA_checkReservedWordColumns } from './functions/Table/CreateTable';
+import { PMA_init_slider } from './utils/Slider';
+import { PMA_sprintf } from './utils/sprintf';
+import { getJSConfirmCommonParam } from './functions/Common';
+import { escapeHtml } from './utils/Sanitise';
+import { AJAX } from './ajax';
+import { PMA_previewSQL } from './functions/Sql/PreviewSql';
+import { printPreview } from './functions/Print';
+/**
+ * @fileoverview    functions used on the table structure page
+ * @name            Table Structure
+ *
+ * @requires    jQuery
+ * @requires    jQueryUI
+ * @required    js/functions.js
+ */
+
+/**
+ * AJAX scripts for tbl_structure.php
+ *
+ * Actions ajaxified here:
+ * Drop Column
+ * Add Primary Key
+ * Drop Primary Key/Index
+ *
+ */
+
+/**
+ * Reload fields table
+ */
+function reloadFieldForm () {
+    $.post($('#fieldsForm').attr('action'), $('#fieldsForm').serialize() + PMA_commonParams.get('arg_separator') + 'ajax_request=true', function (form_data) {
+        var $temp_div = $('&lt;div id=\'temp_div\'>&lt;div>').append(form_data.message);
+        $('#fieldsForm').replaceWith($temp_div.find('#fieldsForm'));
+        $('#addColumns').replaceWith($temp_div.find('#addColumns'));
+        $('#move_columns_dialog').find('ul').replaceWith($temp_div.find('#move_columns_dialog ul'));
+        $('#moveColumns').removeClass('move-active');
+    });
+    $('#page_content').show();
+}
+
+function checkFirst () {
+    if ($('select[name=after_field] option:selected').data('pos') === 'first') {
+        $('input[name=field_where]').val('first');
+    } else {
+        $('input[name=field_where]').val('after');
+    }
+}
+/**
+ * Unbind all event handlers before tearing down a page
+ */
+export function teardownTblStructure () {
+    $(document).off('click', 'a.drop_column_anchor.ajax');
+    $(document).off('click', 'a.add_key.ajax');
+    $(document).off('click', '#move_columns_anchor');
+    $(document).off('click', '#printView');
+    $(document).off('submit', '.append_fields_form.ajax');
+    $('body').off('click', '#fieldsForm.ajax button[name="submit_mult"], #fieldsForm.ajax input[name="submit_mult"]');
+    $(document).off('click', 'a[name^=partition_action].ajax');
+    $(document).off('click', '#remove_partitioning.ajax');
+}
+
+export function onloadTblStructure () {
+    // Re-initialize variables.
+    Indexes.primary_indexes = [];
+    Indexes.indexes = [];
+    Indexes.fulltext_indexes = [];
+    Indexes.spatial_indexes = [];
+
+    /**
+     *Ajax action for submitting the "Column Change" and "Add Column" form
+     */
+    $('.append_fields_form.ajax').off();
+    $(document).on('submit', '.append_fields_form.ajax', function (event) {
+        event.preventDefault();
+        /**
+         * @var    the_form    object referring to the export form
+         */
+        var $form = $(this);
+        var field_cnt = $form.find('input[name=orig_num_fields]').val();
+
+
+        function submitForm () {
+            var $msg = PMA_ajaxShowMessage(PMA_messages.strProcessingRequest);
+            $.post($form.attr('action'), $form.serialize() + PMA_commonParams.get('arg_separator') + 'do_save_data=1', function (data) {
+                if ($('.sqlqueryresults').length !== 0) {
+                    $('.sqlqueryresults').remove();
+                } else if ($('.error:not(.tab)').length !== 0) {
+                    $('.error:not(.tab)').remove();
+                }
+                if (typeof data.success !== 'undefined' &amp;&amp; data.success === true) {
+                    $('#page_content')
+                        .empty()
+                        .append(data.message)
+                        .show();
+                    PMA_highlightSQL($('#page_content'));
+                    $('.result_query .notice').remove();
+                    reloadFieldForm();
+                    $form.remove();
+                    PMA_ajaxRemoveMessage($msg);
+                    PMA_init_slider();
+                    PMA_reloadNavigation();
+                } else {
+                    PMA_ajaxShowMessage(data.error, false);
+                }
+            }); // end $.post()
+        }
+
+        function checkIfConfirmRequired ($form, $field_cnt) {
+            var i = 0;
+            var id;
+            var elm;
+            var val;
+            var name_orig;
+            var elm_orig;
+            var val_orig;
+            var checkRequired = false;
+            for (i = 0; i &lt; field_cnt; i++) {
+                id = '#field_' + i + '_5';
+                elm = $(id);
+                val = elm.val();
+
+                name_orig = 'input[name=field_collation_orig\\[' + i + '\\]]';
+                elm_orig = $form.find(name_orig);
+                val_orig = elm_orig.val();
+
+                if (val &amp;&amp; val_orig &amp;&amp; val !== val_orig) {
+                    checkRequired = true;
+                    break;
+                }
+            }
+            return checkRequired;
+        }
+
+        /*
+         * First validate the form; if there is a problem, avoid submitting it
+         *
+         * checkTableEditForm() needs a pure element and not a jQuery object,
+         * this is why we pass $form[0] as a parameter (the jQuery object
+         * is actually an array of DOM elements)
+         */
+        if (checkTableEditForm($form[0], field_cnt)) {
+            // OK, form passed validation step
+
+            PMA_prepareForAjaxRequest($form);
+            if (PMA_checkReservedWordColumns($form)) {
+                // User wants to submit the form
+
+                // If Collation is changed, Warn and Confirm
+                if (checkIfConfirmRequired($form, field_cnt)) {
+                    var question = PMA_sprintf(
+                        PMA_messages.strChangeColumnCollation, 'https://wiki.phpmyadmin.net/pma/Garbled_data'
+                    );
+                    $form.PMA_confirm(question, $form.attr('action'), function (url) {
+                        submitForm();
+                    });
+                } else {
+                    submitForm();
+                }
+            }
+        }
+    }); // end change table button "do_save_data"
+
+    /**
+     * Attach Event Handler for 'Drop Column'
+     */
+    $(document).on('click', 'a.drop_column_anchor.ajax', function (event) {
+        event.preventDefault();
+        /**
+         * @var curr_table_name String containing the name of the current table
+         */
+        var curr_table_name = $(this).closest('form').find('input[name=table]').val();
+        /**
+         * @var curr_row    Object reference to the currently selected row (i.e. field in the table)
+         */
+        var $curr_row = $(this).parents('tr');
+        /**
+         * @var curr_column_name    String containing name of the field referred to by {@link curr_row}
+         */
+        var curr_column_name = $curr_row.children('th').children('label').text().trim();
+        curr_column_name = escapeHtml(curr_column_name);
+        /**
+         * @var $after_field_item    Corresponding entry in the 'After' field.
+         */
+        var $after_field_item = $('select[name=\'after_field\'] option[value=\'' + curr_column_name + '\']');
+        /**
+         * @var question    String containing the question to be asked for confirmation
+         */
+        var question = PMA_sprintf(PMA_messages.strDoYouReally, 'ALTER TABLE `' + escapeHtml(curr_table_name) + '` DROP `' + escapeHtml(curr_column_name) + '`;');
+        var $this_anchor = $(this);
+        $this_anchor.PMA_confirm(question, $this_anchor.attr('href'), function (url) {
+            var $msg = PMA_ajaxShowMessage(PMA_messages.strDroppingColumn, false);
+            var params = getJSConfirmCommonParam(this, $this_anchor.getPostData());
+            params += PMA_commonParams.get('arg_separator') + 'ajax_page_request=1';
+            $.post(url, params, function (data) {
+                if (typeof data !== 'undefined' &amp;&amp; data.success === true) {
+                    PMA_ajaxRemoveMessage($msg);
+                    if ($('.result_query').length) {
+                        $('.result_query').remove();
+                    }
+                    if (data.sql_query) {
+                        $('&lt;div class="result_query">&lt;/div>')
+                            .html(data.sql_query)
+                            .prependTo('#structure_content');
+                        PMA_highlightSQL($('#page_content'));
+                    }
+                    // Adjust the row numbers
+                    for (var $row = $curr_row.next(); $row.length > 0; $row = $row.next()) {
+                        var new_val = parseInt($row.find('td:nth-child(2)').text(), 10) - 1;
+                        $row.find('td:nth-child(2)').text(new_val);
+                    }
+                    $after_field_item.remove();
+                    $curr_row.hide('medium').remove();
+
+                    // Remove the dropped column from select menu for 'after field'
+                    $('select[name=after_field]').find(
+                        '[value="' + curr_column_name + '"]'
+                    ).remove();
+
+                    // by default select the (new) last option to add new column
+                    // (in case last column is dropped)
+                    $('select[name=after_field] option:last').attr('selected','selected');
+
+                    // refresh table stats
+                    if (data.tableStat) {
+                        $('#tablestatistics').html(data.tableStat);
+                    }
+                    // refresh the list of indexes (comes from sql.php)
+                    $('.index_info').replaceWith(data.indexes_list);
+                    PMA_reloadNavigation();
+                } else {
+                    PMA_ajaxShowMessage(PMA_messages.strErrorProcessingRequest + ' : ' + data.error, false);
+                }
+            }); // end $.post()
+        }); // end $.PMA_confirm()
+    }); // end of Drop Column Anchor action
+
+    /**
+     * Attach Event Handler for 'Print' link
+     */
+    $(document).on('click', '#printView', function (event) {
+        event.preventDefault();
+
+        // Take to preview mode
+        printPreview();
+    }); // end of Print View action
+
+    /**
+     * Ajax Event handler for adding keys
+     */
+    $(document).on('click', 'a.add_key.ajax', function (event) {
+        event.preventDefault();
+
+        var $this = $(this);
+        var curr_table_name = $this.closest('form').find('input[name=table]').val();
+        var curr_column_name = $this.parents('tr').children('th').children('label').text().trim();
+
+        var add_clause = '';
+        if ($this.is('.add_primary_key_anchor')) {
+            add_clause = 'ADD PRIMARY KEY';
+        } else if ($this.is('.add_index_anchor')) {
+            add_clause = 'ADD INDEX';
+        } else if ($this.is('.add_unique_anchor')) {
+            add_clause = 'ADD UNIQUE';
+        } else if ($this.is('.add_spatial_anchor')) {
+            add_clause = 'ADD SPATIAL';
+        } else if ($this.is('.add_fulltext_anchor')) {
+            add_clause = 'ADD FULLTEXT';
+        }
+        var question = PMA_sprintf(PMA_messages.strDoYouReally, 'ALTER TABLE `' +
+                escapeHtml(curr_table_name) + '` ' + add_clause + '(`' + escapeHtml(curr_column_name) + '`);');
+
+        var $this_anchor = $(this);
+
+        $this_anchor.PMA_confirm(question, $this_anchor.attr('href'), function (url) {
+            PMA_ajaxShowMessage();
+            AJAX.source = $this;
+
+            var params = getJSConfirmCommonParam(this, $this_anchor.getPostData());
+            params += PMA_commonParams.get('arg_separator') + 'ajax_page_request=1';
+            $.post(url, params, AJAX.responseHandler);
+        }); // end $.PMA_confirm()
+    }); // end Add key
+
+    /**
+     * Inline move columns
+    **/
+    $(document).on('click', '#move_columns_anchor', function (e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('move-active')) {
+            return;
+        }
+
+        /**
+         * @var    button_options  Object that stores the options passed to jQueryUI
+         *                          dialog
+         */
+        var button_options = {};
+
+        button_options[PMA_messages.strGo] = function (event) {
+            event.preventDefault();
+            var $msgbox = PMA_ajaxShowMessage();
+            var $this = $(this);
+            var $form = $this.find('form');
+            var serialized = $form.serialize();
+            // check if any columns were moved at all
+            if (serialized === $form.data('serialized-unmoved')) {
+                PMA_ajaxRemoveMessage($msgbox);
+                $this.dialog('close');
+                return;
+            }
+            $.post($form.prop('action'), serialized + PMA_commonParams.get('arg_separator') + 'ajax_request=true', function (data) {
+                if (data.success === false) {
+                    PMA_ajaxRemoveMessage($msgbox);
+                    $this
+                        .clone()
+                        .html(data.error)
+                        .dialog({
+                            title: $(this).prop('title'),
+                            height: 230,
+                            width: 900,
+                            modal: true,
+                            buttons: button_options_error
+                        }); // end dialog options
+                } else {
+                    // sort the fields table
+                    var $fields_table = $('table#tablestructure tbody');
+                    // remove all existing rows and remember them
+                    var $rows = $fields_table.find('tr').remove();
+                    // loop through the correct order
+                    for (var i in data.columns) {
+                        var the_column = data.columns[i];
+                        var $the_row = $rows
+                            .find('input:checkbox[value=\'' + the_column + '\']')
+                            .closest('tr');
+                        // append the row for this column to the table
+                        $fields_table.append($the_row);
+                    }
+                    var $firstrow = $fields_table.find('tr').eq(0);
+                    // Adjust the row numbers and colors
+                    for (var $row = $firstrow; $row.length > 0; $row = $row.next()) {
+                        $row
+                            .find('td:nth-child(2)')
+                            .text($row.index() + 1)
+                            .end()
+                            .removeClass('odd even')
+                            .addClass($row.index() % 2 === 0 ? 'odd' : 'even');
+                    }
+                    PMA_ajaxShowMessage(data.message);
+                    $this.dialog('close');
+                }
+            });
+        };
+        button_options[PMA_messages.strPreviewSQL] = function () {
+            // Function for Previewing SQL
+            var $form = $('#move_column_form');
+            PMA_previewSQL($form);
+        };
+        button_options[PMA_messages.strCancel] = function () {
+            $(this).dialog('close');
+        };
+
+        var button_options_error = {};
+        button_options_error[PMA_messages.strOK] = function () {
+            $(this).dialog('close').remove();
+        };
+
+        var columns = [];
+
+        $('#tablestructure').find('tbody tr').each(function () {
+            var col_name = $(this).find('input:checkbox').eq(0).val();
+            var hidden_input = $('&lt;input/>')
+                .prop({
+                    name: 'move_columns[]',
+                    type: 'hidden'
+                })
+                .val(col_name);
+            columns[columns.length] = $('&lt;li/>')
+                .addClass('placeholderDrag')
+                .text(col_name)
+                .append(hidden_input);
+        });
+
+        var col_list = $('#move_columns_dialog').find('ul')
+            .find('li').remove().end();
+        for (var i in columns) {
+            col_list.append(columns[i]);
+        }
+        col_list.sortable({
+            axis: 'y',
+            containment: $('#move_columns_dialog').find('div'),
+            tolerance: 'pointer'
+        }).disableSelection();
+        var $form = $('#move_columns_dialog').find('form');
+        $form.data('serialized-unmoved', $form.serialize());
+
+        $('#move_columns_dialog').dialog({
+            modal: true,
+            buttons: button_options,
+            open: function () {
+                if ($('#move_columns_dialog').parents('.ui-dialog').height() > $(window).height()) {
+                    $('#move_columns_dialog').dialog('option', 'height', $(window).height());
+                }
+            },
+            beforeClose: function () {
+                $('#move_columns_anchor').removeClass('move-active');
+            }
+        });
+    });
+
+    /**
+     * Handles multi submits in table structure page such as change, browse, drop, primary etc.
+     */
+    $('body').on('click', '#fieldsForm.ajax button[name="submit_mult"], #fieldsForm.ajax input[name="submit_mult"]', function (e) {
+        e.preventDefault();
+        var $button = $(this);
+        var $form = $button.parents('form');
+        var argsep = PMA_commonParams.get('arg_separator');
+        var submitData = $form.serialize() + argsep + 'ajax_request=true' + argsep + 'ajax_page_request=true' + argsep + 'submit_mult=' + $button.val();
+        PMA_ajaxShowMessage();
+        AJAX.source = $form;
+        $.post($form.attr('action'), submitData, AJAX.responseHandler);
+    });
+
+    /**
+     * Handles clicks on Action links in partition table
+     */
+    $(document).on('click', 'a[name^=partition_action].ajax', function (e) {
+        e.preventDefault();
+        var $link = $(this);
+
+        function submitPartitionAction (url) {
+            var params = {
+                'ajax_request' : true,
+                'ajax_page_request' : true
+            };
+            PMA_ajaxShowMessage();
+            AJAX.source = $link;
+            $.post(url, params, AJAX.responseHandler);
+        }
+
+        if ($link.is('#partition_action_DROP')) {
+            let question = PMA_messages.strDropPartitionWarning;
+            $link.PMA_confirm(question, $link.attr('href'), function (url) {
+                submitPartitionAction(url);
+            });
+        } else if ($link.is('#partition_action_TRUNCATE')) {
+            let question = PMA_messages.strTruncatePartitionWarning;
+            $link.PMA_confirm(question, $link.attr('href'), function (url) {
+                submitPartitionAction(url);
+            });
+        } else {
+            submitPartitionAction($link.attr('href'));
+        }
+    });
+
+    /**
+     * Handles remove partitioning
+     */
+    $(document).on('click', '#remove_partitioning.ajax', function (e) {
+        e.preventDefault();
+        var $link = $(this);
+        var question = PMA_messages.strRemovePartitioningWarning;
+        $link.PMA_confirm(question, $link.attr('href'), function (url) {
+            var params = {
+                'ajax_request' : true,
+                'ajax_page_request' : true
+            };
+            PMA_ajaxShowMessage();
+            AJAX.source = $link;
+            $.post(url, params, AJAX.responseHandler);
+        });
+    });
+
+    $(document).on('change', 'select[name=after_field]', function () {
+        checkFirst();
+    });
+}
+
+/** Handler for "More" dropdown in structure table rows */
+export function onloadTblStructueDropdown () {
+    var windowwidth = $(window).width();
+    if (windowwidth > 768) {
+        if (! $('#fieldsForm').hasClass('HideStructureActions')) {
+            $('.table-structure-actions').width(function () {
+                var width = 5;
+                $(this).find('li').each(function () {
+                    width += $(this).outerWidth(true);
+                });
+                return width;
+            });
+        }
+    }
+
+    $('.jsresponsive').css('max-width', (windowwidth - 35) + 'px');
+    var tableRows = $('.central_columns');
+    $.each(tableRows, function (index, item) {
+        if ($(item).hasClass('add_button')) {
+            $(item).on('click', function () {
+                $('input:checkbox').prop('checked', false);
+                $('#checkbox_row_' + (index + 1)).prop('checked', true);
+                $('button[value=add_to_central_columns]').trigger('click');
+            });
+        } else {
+            $(item).on('click', function () {
+                $('input:checkbox').prop('checked', false);
+                $('#checkbox_row_' + (index + 1)).prop('checked', true);
+                $('button[value=remove_from_central_columns]').trigger('click');
+            });
+        }
+    });
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Aug 11 2018 03:34:32 GMT+0530 (IST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

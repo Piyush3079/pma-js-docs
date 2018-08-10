@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ajax.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module.exports_module.exports.html">exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html">PmaVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getGlobalVars">getGlobalVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getMessages">getMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getTimePickerVars">getTimePickerVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#getValidatorMessages">getValidatorMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setAllMessages">setAllMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setGlobalVars">setGlobalVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setTimePickerVars">setTimePickerVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-variables_global_variables-PmaVariables.html#setValidatorMessages">setValidatorMessages</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-CommonParams.html">CommonParams</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~getUrlQuery">getUrlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~set">set</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-CommonParams.html#~setAll">setAll</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-variables_global_variables.html">variables/global_variables</a></span></li><li class="nav-heading">Namespaces</li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleBookmarks%250AConsole%2520bookmarks%2520card,%2520and%2520bookmarks%2520items%2520management%2520object.html">ConsoleBookmarks
+Console bookmarks card, and bookmarks items management object</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleDebug.html">ConsoleDebug</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleInput.html">ConsoleInput</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleMessages.html">ConsoleMessages</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="ConsoleResizer.html">ConsoleResizer</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$after_field_item">$after_field_item</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$allTr">$allTr</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$curr_row">$curr_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$editArea">$editArea</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$last_checkbox">$last_checkbox</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$last_row">$last_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$retval">$retval</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$td">$td</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$this_anchor">$this_anchor</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#$thisField">$thisField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_keydown">_keydown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mousedown">_mousedown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mousemove">_mousemove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#_mouseup">_mouseup</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addDateTimePicker">addDateTimePicker</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addUserPreferenceFiles">addUserPreferenceFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ajaxMessageCount">ajaxMessageCount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#aliasSelectHandler">aliasSelectHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#appendQuery">appendQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#array">array</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#array,">array,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#BaseChart">BaseChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindCodeMirrorToInlineEditor">bindCodeMirrorToInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#blur">blur</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#bool">bool</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#bool,">bool,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#browseForeignDialog">browseForeignDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#button_options">button_options</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#buttonOptions">buttonOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#changePluginOpts">changePluginOpts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#Chart">Chart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#ChartFactory">ChartFactory</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ChartType">ChartType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkAddUser">checkAddUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkFieldDefault">checkFieldDefault</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkForCheckbox">checkForCheckbox</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkIndexName">checkIndexName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkIndexType">checkIndexType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkNewCode">checkNewCode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkPassword">checkPassword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkPasswordStrength">checkPasswordStrength</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkSqlQuery">checkSqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#collapse">collapse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#collapseTreeNode">collapseTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#columnCount">columnCount</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ColumnType">ColumnType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#configGet">configGet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#configSet">configSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#confirmLink">confirmLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#confirmQuery">confirmQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Console">Console</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createAliasModal">createAliasModal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createPrintAndBackButtons">createPrintAndBackButtons</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createTemplate">createTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_column_name">curr_column_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row">curr_last_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row_index">curr_last_row_index</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_last_row_index_string">curr_last_row_index_string</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_row">curr_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_rows">curr_rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#curr_table_name">curr_table_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#currValue">currValue</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#DataTable">DataTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#daysInFebruary">daysInFebruary</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#defaultValues">defaultValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteTemplate">deleteTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#disableDumpSomeRowsSubOptions">disableDumpSomeRowsSubOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#dismissable">dismissable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#displayErrors">displayErrors</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#displayPasswordGenerateButton">displayPasswordGenerateButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#editVariable">editVariable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#emptyCheckTheField">emptyCheckTheField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#enableDumpSomeRowsSubOptions">enableDumpSomeRowsSubOptions</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ErrorReport">ErrorReport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#escapeHtml">escapeHtml</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#escapeJsString">escapeJsString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#execute">execute</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#expandTreeNode">expandTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fieldName">fieldName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#filterVariables">filterVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#focus">focus</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fullSqlQuery">fullSqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fulltext_indexes">fulltext_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#fullWhereClause">fullWhereClause</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#function">function</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getAllValues">getAllValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getDropdownValues">getDropdownValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldName">getFieldName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldType">getFieldType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldValidators">getFieldValidators</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFieldValue">getFieldValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getForeignKeyCheckboxLoader">getForeignKeyCheckboxLoader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getHistory">getHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIdPrefix">getIdPrefix</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIndexPage">getIndexPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getPos">getPos</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getSymbol">getSymbol</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTemplateData">getTemplateData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getText">getText</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#GlobalVariables">GlobalVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#hash">hash</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#indexes">indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initialize">initialize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initTableSorter">initTableSorter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#insertQuery">insertQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#insertValueQuery">insertValueQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#int">int</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#int,">int,</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#is_view">is_view</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isNull">isNull</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#isStorageSupported">isStorageSupported</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isUnique">isUnique</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotAreaChart">JQPlotAreaChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotBarChart">JQPlotBarChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotChart">JQPlotChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotChartFactory">JQPlotChartFactory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotColumnChart">JQPlotColumnChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotLineChart">JQPlotLineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotPieChart">JQPlotPieChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotScatterChart">JQPlotScatterChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotSplineChart">JQPlotSplineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#JQPlotTimelineChart">JQPlotTimelineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#JqueryValidations">JqueryValidations</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_click_checked">last_click_checked</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_clicked_row">last_clicked_row</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#last_shift_clicked_row">last_shift_clicked_row</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadChildNodes">loadChildNodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadCommonFiles">loadCommonFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadTemplate">loadTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loafIndexFiles">loafIndexFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#makeProfilingChartInlineFunctionforcreatingprofilingchartonclickingprofilingcheckbox">makeProfilingChartInline Function for creating profiling chart
+on clicking profiling checkbox</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#markField">markField</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#matchFile">matchFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#MenuResizer">MenuResizer</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#methods">methods</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#MicroHistory">MicroHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mousedown">mousedown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mousemove">mousemove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#mouseup">mouseup</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#mysql_doc_keyword">mysql_doc_keyword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navFilterStateRestore">navFilterStateRestore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navFilterStateUpdate">navFilterStateUpdate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#navTreeStateUpdate">navTreeStateUpdate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#new_last_row_id">new_last_row_id</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#new_last_row_index">new_last_row_index</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#nullify">nullify</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Number">Number</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#object">object</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Object">Object</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#object,">object,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#offerPrefsAutoimport">offerPrefsAutoimport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onload">onload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onload2">onload2</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadCreateTable">onloadCreateTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadDbTracking">onloadDbTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadImport">onloadImport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadIndexes">onloadIndexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadPageSettings">onloadPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerDatabases">onloadServerDatabases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerPlugins">onloadServerPlugins</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerPrivileges">onloadServerPrivileges</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusAdvisor">onloadServerStatusAdvisor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusProcesses">onloadServerStatusProcesses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerStatusVariables">onloadServerStatusVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerUserGroups">onloadServerUserGroups</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadServerVariables">onloadServerVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadSqlEditor">onloadSqlEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadSqlInlineEditor">onloadSqlInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblChange">onloadTblChange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblFindReplace">onloadTblFindReplace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblOperations">onloadTblOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblStructueDropdown">onloadTblStructueDropdown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#onloadTblTracking">onloadTblTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PieChart">PieChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_addColumnToIndex">PMA_addColumnToIndex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_adjustTotals">PMA_adjustTotals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ajaxRemoveMessage">PMA_ajaxRemoveMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ajaxShowMessage">PMA_ajaxShowMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_autosaveSQL">PMA_autosaveSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_autosaveSQLSort">PMA_autosaveSQLSort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_changeClassForColumn">PMA_changeClassForColumn</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_checkIfDataTypeNumericOrDate">PMA_checkIfDataTypeNumericOrDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_checkReservedWordColumns">PMA_checkReservedWordColumns</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#PMA_commonActions">PMA_commonActions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_disableNaviSettings">PMA_disableNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_add">PMA_doc_add</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_builtin">PMA_doc_builtin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_doc_keyword">PMA_doc_keyword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_ensureNaviSettings">PMA_ensureNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_fetchRealRowCount">PMA_fetchRealRowCount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getCellValue">PMA_getCellValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getCompositeIndexList">PMA_getCompositeIndexList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getImage">PMA_getImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getIndexArray">PMA_getIndexArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_getSQLEditor">PMA_getSQLEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_handleSimulateQueryButton">PMA_handleSimulateQueryButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowConnection">PMA_hideShowConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowDefaultValue">PMA_hideShowDefaultValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_hideShowExpression">PMA_hideShowExpression</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_highlightSQL">PMA_highlightSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_indexTypeSelectionDialog">PMA_indexTypeSelectionDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_init_slider">PMA_init_slider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_makegrid">PMA_makegrid</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#PMA_Messages">PMA_Messages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_navigationTreePagination">PMA_navigationTreePagination</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_prepareForAjaxRequest">PMA_prepareForAjaxRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_previewSQL">PMA_previewSQL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_reloadNavigation">PMA_reloadNavigation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_removeColumnFromIndex">PMA_removeColumnFromIndex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_set_status_label">PMA_set_status_label</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_setIndexFormParameters">PMA_setIndexFormParameters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showAddIndexDialog">PMA_showAddIndexDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showFullName">PMA_showFullName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showHints">PMA_showHints</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showNoticeForEnum">PMA_showNoticeForEnum</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_showThisQuery">PMA_showThisQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_sprintf">PMA_sprintf</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_tooltip">PMA_tooltip</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_updateCode">PMA_updateCode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_urldecode">PMA_urldecode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_urlencode">PMA_urlencode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#PMA_verifyColumnsProperties">PMA_verifyColumnsProperties</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#postParams">postParams</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#primary_indexes">primary_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#printPage">printPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#printPreview">printPreview</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#processList">processList</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#question">question</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#random_server_id">random_server_id</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationalDisplay">relationalDisplay</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationCurrValue">relationCurrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationFields">relationFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relationKeyOrDisplayColumn">relationKeyOrDisplayColumn</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#relFieldsList">relFieldsList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#reloadFieldForm">reloadFieldForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeColumnFromMultiSort">removeColumnFromMultiSort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removePrintAndBackButton">removePrintAndBackButton</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#ResizeHandler">ResizeHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#restoreField">restoreField</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#rows">rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Rows">Rows</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#RTE">RTE</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#savePrefsToLocalStorage">savePrefsToLocalStorage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#ScatterChart">ScatterChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#scrollToView">scrollToView</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#selected_dbs">selected_dbs</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#self_closing">self_closing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setDropdownValues">setDropdownValues</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setFieldValue">setFieldValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setQuery">setQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setRestoreDefaultBtn">setRestoreDefaultBtn</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setShowThisQuery">setShowThisQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setTab">setTab</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setText">setText</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#SetUrlHash">SetUrlHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setWidth">setWidth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#show_hide_clauses">show_hide_clauses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showHistory">showHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showInstructions">showInstructions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showNaviSettings">showNaviSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showPageSettings">showPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#showSettings">showSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#spatial_indexes">spatial_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#sql_autocomplete_in_progress">sql_autocomplete_in_progress</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#sqlQuery">sqlQuery</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#string">string</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#string,">string,</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#suggestPassword">suggestPassword</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#table_body">table_body</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#tables_table">tables_table</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#target_rows">target_rows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teadownFunctions">teadownFunctions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardown1">teardown1</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownConfig">teardownConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownCreateTable">teardownCreateTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownCtrlEnterFormSubmit">teardownCtrlEnterFormSubmit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbCentralColumns">teardownDbCentralColumns</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbOperations">teardownDbOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbSearch">teardownDbSearch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbStructure">teardownDbStructure</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownDbTracking">teardownDbTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownExport">teardownExport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownImport">teardownImport</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownIndexes">teardownIndexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownPageSettings">teardownPageSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerDatabases">teardownServerDatabases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerPrivileges">teardownServerPrivileges</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusAdvisor">teardownServerStatusAdvisor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusProcesses">teardownServerStatusProcesses</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusQueries">teardownServerStatusQueries</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerStatusVariables">teardownServerStatusVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerUserGroups">teardownServerUserGroups</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownServerVariables">teardownServerVariables</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownSqlInlineEditor">teardownSqlInlineEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownSqlQueryExecute">teardownSqlQueryExecute</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblChange">teardownTblChange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblFindReplace">teardownTblFindReplace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblOperations">teardownTblOperations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblRelation">teardownTblRelation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblSelect">teardownTblSelect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblStructure">teardownTblStructure</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#teardownTblTracking">teardownTblTracking</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#the_form">the_form</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#this_name">this_name</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#thisFieldParams">thisFieldParams</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#TimelineChart">TimelineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#timePicker">timePicker</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleDatepickerIfInvalid">toggleDatepickerIfInvalid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleQuickOrCustom">toggleQuickOrCustom</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleSaveToFile">toggleSaveToFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleSqlIncludeComments">toggleSqlIncludeComments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleStructureDataOpts">toggleStructureDataOpts</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformationFields">transformationFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformFields">transformFields</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#transformFieldsList">transformFieldsList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#traverseNavigationForPaths">traverseNavigationForPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#treeResize">treeResize</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#unique_indexes">unique_indexes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updatePrefsDate">updatePrefsDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateQueryParameters">updateQueryParameters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateTemplate">updateTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#validate">validate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_field">validate_field</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_field_and_fieldset">validate_field_and_fieldset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validate_fieldset">validate_fieldset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validateField">validateField</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#whereClause">whereClause</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ajax.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* vim: set expandtab sw=4 ts=4 sts=4: */
+
+/**
+ * Module import
+ */
+import { PMA_ajaxShowMessage,
+    PMA_ajaxRemoveMessage
+} from './utils/show_ajax_messages';
+import { PMA_Messages as PMA_messages } from './variables/export_variables';
+import CommonParams from './variables/common_params';
+// import { jQuery as $ } from './utils/extend_jquery';
+import { PMA_getImage } from './functions/get_image';
+import { PMA_ensureNaviSettings,
+    PMA_reloadNavigation,
+    PMA_disableNaviSettings
+} from './functions/navigation';
+import { isStorageSupported } from './functions/config';
+import PMA_MicroHistory from './classes/MicroHistory';
+import { escapeHtml } from './utils/Sanitise';
+import { PMA_sprintf } from './utils/sprintf';
+import { JsFileList } from './consts/files';
+
+/**
+ * This object handles ajax requests for pages. It also
+ * handles the reloading of the main menu and scripts.
+ */
+
+function checkNewCode (script) {
+    var check = script.split('.js');
+    // console.log(check);
+    if (check.length === 2) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+export let AJAX = {
+    /**
+     * @var bool test variable for checking this object
+     */
+    test: false,
+    /**
+     * @var bool active Whether we are busy
+     */
+    active: false,
+    /**
+     * @var object source The object whose event initialized the request
+     */
+    source: null,
+    /**
+     * @var object xhr A reference to the ajax request that is currently running
+     */
+    xhr: null,
+    /**
+     * @var object lockedTargets, list of locked targets
+     */
+    lockedTargets: {},
+    /**
+     * @var function Callback to execute after a successful request
+     *               Used by PMA_commonFunctions from common.js
+     */
+    _callback: function () {},
+    /**
+     * @var bool _debug Makes noise in your Firebug console
+     */
+    _debug: false,
+    /**
+     * @var object $msgbox A reference to a jQuery object that links to a message
+     *                     box that is generated by PMA_ajaxShowMessage()
+     */
+    $msgbox: null,
+    /**
+     * Given the filename of a script, returns a hash to be
+     * used to refer to all the events registered for the file
+     *
+     * @param key string key The filename for which to get the event name
+     *
+     * @return int
+     */
+
+    hash: function (key) {
+        /* http://burtleburtle.net/bob/hash/doobs.html#one */
+        key += '';
+        var len = key.length;
+        var hash = 0;
+        var i = 0;
+        for (; i &lt; len; ++i) {
+            hash += key.charCodeAt(i);
+            hash += (hash &lt;&lt; 10);
+            hash ^= (hash >> 6);
+        }
+        hash += (hash &lt;&lt; 3);
+        hash ^= (hash >> 11);
+        hash += (hash &lt;&lt; 15);
+        return Math.abs(hash);
+    },
+    /**
+     * Registers an onload event for a file
+     *
+     * @param file string   file The filename for which to register the event
+     * @param func function func The function to execute when the page is ready
+     *
+     * @return self For chaining
+     */
+    registerOnload: function (file, func) {
+
+        var eventName = 'onload_' + this.hash(file);
+        $(document).on(eventName, func);
+        if (this._debug) {
+            console.log(
+                // no need to translate
+                'Registered event ' + eventName + ' for file ' + file
+            );
+        }
+        return this;
+    },
+    /**
+     * Registers a teardown event for a file. This is useful to execute functions
+     * that unbind events for page elements that are about to be removed.
+     *
+     * @param string   file The filename for which to register the event
+     * @param function func The function to execute when
+     *                      the page is about to be torn down
+     *
+     * @return self For chaining
+     */
+    registerTeardown: function (file, func) {
+        var eventName = 'teardown_' + this.hash(file);
+        $(document).on(eventName, func);
+        if (this._debug) {
+            console.log(
+                // no need to translate
+                'Registered event ' + eventName + ' for file ' + file
+            );
+        }
+        return this;
+    },
+    /**
+     * Called when a page has finished loading, once for every
+     * file that registered to the onload event of that file.
+     *
+     * @param string file The filename for which to fire the event
+     *
+     * @return void
+     */
+    fireOnload: function (file) {
+        var eventName = 'onload_' + this.hash(file);
+        $(document).trigger(eventName);
+        if (this._debug) {
+            console.log(
+                // no need to translate
+                'Fired event ' + eventName + ' for file ' + file
+            );
+        }
+    },
+    /**
+     * Called just before a page is torn down, once for every
+     * file that registered to the teardown event of that file.
+     *
+     * @param string file The filename for which to fire the event
+     *
+     * @return void
+     */
+    fireTeardown: function (file) {
+        var eventName = 'teardown_' + this.hash(file);
+        $(document).triggerHandler(eventName);
+        if (this._debug) {
+            console.log(
+                // no need to translate
+                'Fired event ' + eventName + ' for file ' + file
+            );
+        }
+    },
+    /**
+     * function to handle lock page mechanism
+     *
+     * @param event the event object
+     *
+     * @return void
+     */
+    lockPageHandler: function (event) {
+        var newHash = null;
+        var oldHash = null;
+        var lockId;
+        // CodeMirror lock
+        if (event.data.value === 3) {
+            newHash = event.data.content;
+            oldHash = true;
+            lockId = 'cm';
+        } else {
+            // Don't lock on enter.
+            if (0 === event.charCode) {
+                return;
+            }
+
+            lockId = $(this).data('lock-id');
+            if (typeof lockId === 'undefined') {
+                return;
+            }
+            /*
+             * @todo Fix Code mirror does not give correct full value (query)
+             * in textarea, it returns only the change in content.
+             */
+            if (event.data.value === 1) {
+                newHash = AJAX.hash($(this).val());
+            } else {
+                newHash = AJAX.hash($(this).is(':checked'));
+            }
+            oldHash = $(this).data('val-hash');
+        }
+        // Set lock if old value !== new value
+        // otherwise release lock
+        if (oldHash !== newHash) {
+            AJAX.lockedTargets[lockId] = true;
+        } else {
+            delete AJAX.lockedTargets[lockId];
+        }
+        // Show lock icon if locked targets is not empty.
+        // otherwise remove lock icon
+        if (!$.isEmptyObject(AJAX.lockedTargets)) {
+            $('#lock_page_icon').html(PMA_getImage('s_lock', PMA_messages.strLockToolTip).toString());
+        } else {
+            $('#lock_page_icon').html('');
+        }
+    },
+    /**
+     * resets the lock
+     *
+     * @return void
+     */
+    resetLock: function () {
+        AJAX.lockedTargets = {};
+        $('#lock_page_icon').html('');
+    },
+    handleMenu: {
+        replace: function (content) {
+            $('#floating_menubar').html(content)
+                // Remove duplicate wrapper
+                // TODO: don't send it in the response
+                .children().first().remove();
+            $('#topmenu').menuResizer(PMA_mainMenuResizerCallback);
+        }
+    },
+    /**
+     * Event handler for clicks on links and form submissions
+     *
+     * @param object e Event data
+     *
+     * @return void
+     */
+    requestHandler: function (event) {
+        // In some cases we don't want to handle the request here and either
+        // leave the browser deal with it natively (e.g: file download)
+        // or leave an existing ajax event handler present elsewhere deal with it
+        var href = $(this).attr('href');
+        if (typeof event !== 'undefined' &amp;&amp; (event.shiftKey || event.ctrlKey)) {
+            return true;
+        } else if ($(this).attr('target')) {
+            return true;
+        } else if ($(this).hasClass('ajax') || $(this).hasClass('disableAjax')) {
+            // reset the lockedTargets object, as specified AJAX operation has finished
+            AJAX.resetLock();
+            return true;
+        } else if (href &amp;&amp; href.match(/^#/)) {
+            return true;
+        } else if (href &amp;&amp; href.match(/^mailto/)) {
+            return true;
+        } else if ($(this).hasClass('ui-datepicker-next') ||
+            $(this).hasClass('ui-datepicker-prev')
+        ) {
+            return true;
+        }
+        if (typeof event !== 'undefined') {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
+        // triggers a confirm dialog if:
+        // the user has performed some operations on loaded page
+        // the user clicks on some link, (won't trigger for buttons)
+        // the click event is not triggered by script
+        if (typeof event !== 'undefined' &amp;&amp; event.type === 'click' &amp;&amp;
+            event.isTrigger !== true &amp;&amp;
+            !$.isEmptyObject(AJAX.lockedTargets)
+        ) {
+            if (confirm(PMA_messages.strConfirmNavigation) === false) {
+                return false;
+            } else {
+                if (isStorageSupported('localStorage')) {
+                    window.localStorage.removeItem('auto_saved_sql');
+                } else {
+                    Cookies.set('auto_saved_sql', '');
+                }
+            }
+        }
+        AJAX.resetLock();
+        var isLink = !! href || false;
+        var previousLinkAborted = false;
+        if (AJAX.active === true) {
+            // Cancel the old request if abortable, when the user requests
+            // something else. Otherwise silently bail out, as there is already
+            // a request well in progress.
+            if (AJAX.xhr) {
+                // In case of a link request, attempt aborting
+                AJAX.xhr.abort();
+                if (AJAX.xhr.status === 0 &amp;&amp; AJAX.xhr.statusText === 'abort') {
+                    // If aborted
+                    AJAX.$msgbox = PMA_ajaxShowMessage(PMA_messages.strAbortedRequest);
+                    AJAX.active = false;
+                    AJAX.xhr = null;
+                    previousLinkAborted = true;
+                } else {
+                    // If can't abort
+                    return false;
+                }
+            } else {
+                // In case submitting a form, don't attempt aborting
+                return false;
+            }
+        }
+        AJAX.source = $(this);
+
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+
+        var url = isLink ? href : $(this).attr('action');
+        var argsep = CommonParams.get('arg_separator');
+        var params = 'ajax_request=true' + argsep + 'ajax_page_request=true';
+        var dataPost = AJAX.source.getPostData();
+        if (! isLink) {
+            params += argsep + $(this).serialize();
+        } else if (dataPost) {
+            params += argsep + dataPost;
+            isLink = false;
+        }
+        if (! (history &amp;&amp; history.pushState)) {
+            // Add a list of menu hashes that we have in the cache to the request
+            params += PMA_MicroHistory.menus.getRequestParam();
+        }
+
+        if (AJAX._debug) {
+            console.log('Loading: ' + url); // no need to translate
+        }
+
+        if (isLink) {
+            AJAX.active = true;
+            AJAX.$msgbox = PMA_ajaxShowMessage();
+            // Save reference for the new link request
+            AJAX.xhr = $.get(url, params, AJAX.responseHandler);
+            if (history &amp;&amp; history.pushState) {
+                var state = {
+                    url : href
+                };
+                if (previousLinkAborted) {
+                    // hack: there is already an aborted entry on stack
+                    // so just modify the aborted one
+                    history.replaceState(state, null, href);
+                } else {
+                    history.pushState(state, null, href);
+                }
+            }
+        } else {
+            /**
+             * Manually fire the onsubmit event for the form, if any.
+             * The event was saved in the jQuery data object by an onload
+             * handler defined below. Workaround for bug #3583316
+             */
+            var onsubmit = $(this).data('onsubmit');
+            // Submit the request if there is no onsubmit handler
+            // or if it returns a value that evaluates to true
+            if (typeof onsubmit !== 'function' || onsubmit.apply(this, [event])) {
+                AJAX.active = true;
+                AJAX.$msgbox = PMA_ajaxShowMessage();
+                $.post(url, params, AJAX.responseHandler);
+            }
+        }
+    },
+    /**
+     * Called after the request that was initiated by this.requestHandler()
+     * has completed successfully or with a caught error. For completely
+     * failed requests or requests with uncaught errors, see the .ajaxError
+     * handler at the bottom of this file.
+     *
+     * To refer to self use 'AJAX', instead of 'this' as this function
+     * is called in the jQuery context.
+     *
+     * @param object e Event data
+     *
+     * @return void
+     */
+    responseHandler: function (data) {
+        if (typeof data === 'undefined' || data === null) {
+            return;
+        }
+        if (typeof data.success !== 'undefined' &amp;&amp; data.success) {
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+            PMA_ajaxRemoveMessage(AJAX.$msgbox);
+
+            if (data._redirect) {
+                PMA_ajaxShowMessage(data._redirect, false);
+                AJAX.active = false;
+                AJAX.xhr = null;
+                return;
+            }
+
+            AJAX.scriptHandler.reset(function () {
+                if (data._reloadNavigation) {
+                    PMA_reloadNavigation();
+                }
+
+                if (data._title) {
+                    $('title').replaceWith(data._title);
+                }
+                if (data._menu) {
+                    if (history &amp;&amp; history.pushState) {
+                        var state = {
+                            url : data._selflink,
+                            menu : data._menu
+                        };
+                        history.replaceState(state, null);
+                        AJAX.handleMenu.replace(data._menu);
+                    } else {
+                        PMA_MicroHistory.menus.replace(data._menu);
+                        PMA_MicroHistory.menus.add(data._menuHash, data._menu);
+                    }
+                } else if (data._menuHash) {
+                    if (! (history &amp;&amp; history.pushState)) {
+                        PMA_MicroHistory.menus.replace(PMA_MicroHistory.menus.get(data._menuHash));
+                    }
+                }
+                if (data._disableNaviSettings) {
+                    PMA_disableNaviSettings();
+                } else {
+                    PMA_ensureNaviSettings(data._selflink);
+                }
+
+                // Remove all containers that may have
+                // been added outside of #page_content
+                $('body').children()
+                    .not('#pma_navigation')
+                    .not('#floating_menubar')
+                    .not('#page_nav_icons')
+                    .not('#page_content')
+                    .not('#selflink')
+                    .not('#pma_header')
+                    .not('#pma_footer')
+                    .not('#pma_demo')
+                    .not('#pma_console_container')
+                    .not('#prefs_autoload')
+                    .remove();
+                // Replace #page_content with new content
+                if (data.message &amp;&amp; data.message.length > 0) {
+                    $('#page_content').replaceWith(
+                        '&lt;div id=\'page_content\'>' + data.message + '&lt;/div>'
+                    );
+                    PMA_highlightSQL($('#page_content'));
+                    checkNumberOfFields();
+                }
+
+                if (data._selflink) {
+                    var source = data._selflink.split('?')[0];
+                    // Check for faulty links
+                    var $selflink_replace = {
+                        'import.php': 'tbl_sql.php',
+                        'tbl_chart.php': 'sql.php',
+                        'tbl_gis_visualization.php': 'sql.php'
+                    };
+                    if ($selflink_replace[source]) {
+                        var replacement = $selflink_replace[source];
+                        data._selflink = data._selflink.replace(source, replacement);
+                    }
+                    $('#selflink').find('> a').attr('href', data._selflink);
+                }
+                if (data._params) {
+                    CommonParams.setAll(data._params);
+                }
+                if (data._scripts) {
+                    AJAX.scriptHandler.load(data._scripts);
+                }
+                if (data._selflink &amp;&amp; data._scripts &amp;&amp; data._menuHash &amp;&amp; data._params) {
+                    if (! (history &amp;&amp; history.pushState)) {
+                        PMA_MicroHistory.add(
+                            data._selflink,
+                            data._scripts,
+                            data._menuHash,
+                            data._params,
+                            AJAX.source.attr('rel')
+                        );
+                    }
+                }
+                if (data._displayMessage) {
+                    $('#page_content').prepend(data._displayMessage);
+                    PMA_highlightSQL($('#page_content'));
+                }
+
+                $('#pma_errors').remove();
+
+                var msg = '';
+                if (data._errSubmitMsg) {
+                    msg = data._errSubmitMsg;
+                }
+                if (data._errors) {
+                    $('&lt;div/>', { id : 'pma_errors', class : 'clearfloat' })
+                        .insertAfter('#selflink')
+                        .append(data._errors);
+                    // bind for php error reporting forms (bottom)
+                    $('#pma_ignore_errors_bottom').on('click', function (e) {
+                        e.preventDefault();
+                        PMA_ignorePhpErrors();
+                    });
+                    $('#pma_ignore_all_errors_bottom').on('click', function (e) {
+                        e.preventDefault();
+                        PMA_ignorePhpErrors(false);
+                    });
+                    // In case of 'sendErrorReport'='always'
+                    // submit the hidden error reporting form.
+                    if (data._sendErrorAlways === '1' &amp;&amp;
+                        data._stopErrorReportLoop !== '1'
+                    ) {
+                        $('#pma_report_errors_form').submit();
+                        PMA_ajaxShowMessage(PMA_messages.phpErrorsBeingSubmitted, false);
+                        $('html, body').animate({ scrollTop:$(document).height() }, 'slow');
+                    } else if (data._promptPhpErrors) {
+                        // otherwise just prompt user if it is set so.
+                        msg = msg + PMA_messages.phpErrorsFound;
+                        // scroll to bottom where all the errors are displayed.
+                        $('html, body').animate({ scrollTop:$(document).height() }, 'slow');
+                    }
+                }
+                PMA_ajaxShowMessage(msg, false);
+                // bind for php error reporting forms (popup)
+                $('#pma_ignore_errors_popup').on('click', function () {
+                    PMA_ignorePhpErrors();
+                });
+                $('#pma_ignore_all_errors_popup').on('click', function () {
+                    PMA_ignorePhpErrors(false);
+                });
+
+                if (typeof AJAX._callback === 'function') {
+                    AJAX._callback.call();
+                }
+                AJAX._callback = function () {};
+            });
+        } else {
+            PMA_ajaxShowMessage(data.error, false);
+            AJAX.active = false;
+            AJAX.xhr = null;
+            PMA_handleRedirectAndReload(data);
+            if (data.fieldWithError) {
+                $(':input.error').removeClass('error');
+                $('#' + data.fieldWithError).addClass('error');
+            }
+        }
+    },
+    /**
+     * This object is in charge of downloading scripts,
+     * keeping track of what's downloaded and firing
+     * the onload event for them when the page is ready.
+     */
+    scriptHandler: {
+        /**
+         * @var array _scripts The list of files already downloaded
+         */
+        _scripts: [],
+        /**
+         * @var string _scriptsVersion version of phpMyAdmin from which the
+         *                             scripts have been loaded
+         */
+        _scriptsVersion: null,
+        /**
+         * @var array _scriptsToBeLoaded The list of files that
+         *                               need to be downloaded
+         */
+        _scriptsToBeLoaded: [],
+        /**
+         * @var array _scriptsToBeFired The list of files for which
+         *                              to fire the onload and unload events
+         */
+        _scriptsToBeFired: [],
+        _scriptsCompleted: false,
+        /**
+         * Records that a file has been downloaded
+         *
+         * @param string file The filename
+         * @param string fire Whether this file will be registering
+         *                    onload/teardown events
+         *
+         * @return self For chaining
+         */
+        add: function (file, fire, callback) {
+            var self = this;
+            this._scripts.push(file);
+            if (fire) {
+                // Record whether to fire any events for the file
+                // This is necessary to correctly tear down the initial page
+                this._scriptsToBeFired.push(file);
+            }
+            if (checkNewCode(file)) {
+                if ($.inArray(file, JsFileList) !== -1) {
+                    console.log(file);
+                    import(`./${file}`)
+                    .then((module) => {
+                        /**
+                         * setTimeout is used so that scripts run only when content is
+                         * available.
+                         *
+                         * TODO:// This is a temporary measure. Will have to look for
+                         * why the content is loading earlier in new moduarized code.
+                         *
+                         * Conflicting cases:
+                         * 1). server_exports.php
+                         * 2). server_import.php
+                         */
+                        setTimeout(function () {
+                            for (var i in module) {
+                                if (i.indexOf('onload') !== -1) {
+                                    AJAX.registerOnload(`${file}`, module[i]);
+                                } else if (i.indexOf('teardown') !== -1) {
+                                    AJAX.registerTeardown(file, module[i]);
+                                }
+                            }
+                            AJAX.fireOnload(file);
+                        }, 250);
+                        // AJAX.fireTeardown('server_databases_new.js');
+                    })
+                    .catch(e => console.log(e));
+                }
+            }
+            return this;
+
+        },
+        /**
+         * Download a list of js files in one request
+         *
+         * @param array files An array of filenames and flags
+         *
+         * @return void
+         */
+        load: function (files, callback) {
+            var self = this;
+            var i;
+            // Clear loaded scripts if they are from another version of phpMyAdmin.
+            // Depends on common params being set before loading scripts in responseHandler
+            if (self._scriptsVersion === null) {
+                self._scriptsVersion = CommonParams.get('PMA_VERSION');
+            } else if (self._scriptsVersion !== CommonParams.get('PMA_VERSION')) {
+                self._scripts = [];
+                self._scriptsVersion = CommonParams.get('PMA_VERSION');
+            }
+            self._scriptsCompleted = false;
+            self._scriptsToBeFired = [];
+            // We need to first complete list of files to load
+            // as next loop will directly fire requests to load them
+            // and that triggers removal of them from
+            // self._scriptsToBeLoaded
+            for (i in files) {
+                self._scriptsToBeLoaded.push(files[i].name);
+                if (files[i].fire) {
+                    self._scriptsToBeFired.push(files[i].name);
+                }
+            }
+            for (i in files) {
+                var script = files[i].name;
+                // Only for scripts that we don't already have
+                if ($.inArray(script, self._scripts) === -1) {
+                    this.add(script, 0, callback);
+                    /**
+                     * To be removed once complete code is modularised
+                     * Only for appending js files in the header if not already present
+                     */
+                    if (!checkNewCode(script)) {
+                        this.appendScript(script, callback);
+                    }
+                }
+                self.done(script, callback);
+            }
+            // Trigger callback if there is nothing else to load
+            self.done(null, callback);
+        },
+        /**
+         * Called whenever all files are loaded
+         *
+         * @return void
+         */
+        done: function (script, callback) {
+            if (typeof ErrorReport !== 'undefined') {
+                ErrorReport.wrap_global_functions();
+            }
+            if ($.inArray(script, this._scriptsToBeFired)) {
+                AJAX.fireOnload(script);
+            }
+            if ($.inArray(script, this._scriptsToBeLoaded)) {
+                this._scriptsToBeLoaded.splice($.inArray(script, this._scriptsToBeLoaded), 1);
+            }
+            if (script === null) {
+                this._scriptsCompleted = true;
+            }
+            /* We need to wait for last signal (with null) or last script load */
+            AJAX.active = (this._scriptsToBeLoaded.length > 0) || ! this._scriptsCompleted;
+            /* Run callback on last script */
+            if (! AJAX.active &amp;&amp; $.isFunction(callback)) {
+                callback();
+            }
+        },
+        /**
+         * Appends a script element to the head to load the scripts
+         *
+         * @return void
+         * this is to be removed in modularised code
+         * no appending of scripts is needed
+         */
+        appendScript: function (name, callback) {
+            var head = document.head || document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            var self = this;
+
+            script.type = 'text/javascript';
+            /**
+             * This piece of code is for appending the new revamped files into the
+             * DOM so that both new and old files can be used simultaneously
+             * It checks whether the file contains new in its name or not
+             */
+            script.src = 'js/' + name + '?' + 'v=' + encodeURIComponent(CommonParams.get('PMA_VERSION'));
+            script.async = false;
+
+            script.onload = function () {
+                self.done(name, callback);
+            };
+            head.appendChild(script);
+        },
+        /**
+         * Fires all the teardown event handlers for the current page
+         * and rebinds all forms and links to the request handler
+         *
+         * @param function callback The callback to call after resetting
+         *
+         * @return void
+         */
+        reset: function (callback) {
+            for (var i in this._scriptsToBeFired) {
+                AJAX.fireTeardown(this._scriptsToBeFired[i]);
+            }
+            this._scriptsToBeFired = [];
+            /**
+             * Re-attach a generic event handler to clicks
+             * on pages and submissions of forms
+             */
+            $(document).off('click', 'a').on('click', 'a', AJAX.requestHandler);
+            $(document).off('submit', 'form').on('submit', 'form', AJAX.requestHandler);
+            if (! (history &amp;&amp; history.pushState)) {
+                PMA_MicroHistory.update();
+            }
+            callback();
+        }
+    }
+}
+
+/**
+ * @todo Below mentioned two events and functions are added in this file as these
+ * events and functions are making ajax call to the server for fetching resources
+ * and data.
+ * For now there are are two jquery instances, one which is globally available in
+ * the window object and another which is being exported as module.
+ * Once all the code work on new imported jQuery instance, these events and functions
+ * can be copied to index.js
+ */
+/**
+ * Attach a generic event handler to clicks
+ * on pages and submissions of forms
+ */
+$(document).on('click', 'a', AJAX.requestHandler);
+$(document).on('submit', 'form', AJAX.requestHandler);
+
+/**
+ * Gracefully handle fatal server errors
+ * (e.g: 500 - Internal server error)
+ */
+$(document).ajaxError(function (event, request, settings) {
+    if (AJAX._debug) {
+        console.log('AJAX error: status=' + request.status + ', text=' + request.statusText);
+    }
+    // Don't handle aborted requests
+    if (request.status !== 0 || request.statusText !== 'abort') {
+        var details = '';
+        var state = request.state();
+
+        if (request.status !== 0) {
+            details += '&lt;div>' + escapeHtml(PMA_sprintf(PMA_messages.strErrorCode, request.status)) + '&lt;/div>';
+        }
+        details += '&lt;div>' + escapeHtml(PMA_sprintf(PMA_messages.strErrorText, request.statusText + ' (' + state + ')')) + '&lt;/div>';
+        if (state === 'rejected' || state === 'timeout') {
+            details += '&lt;div>' + escapeHtml(PMA_messages.strErrorConnection) + '&lt;/div>';
+        }
+        PMA_ajaxShowMessage(
+            '&lt;div class="error">' +
+            PMA_messages.strErrorProcessingRequest +
+            details +
+            '&lt;/div>',
+            false
+        );
+        AJAX.active = false;
+        AJAX.xhr = null;
+    }
+});
+
+/**
+ * Exporsing module to window for use with non modular code
+ */
+window.AJAX = AJAX;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Aug 11 2018 03:34:32 GMT+0530 (IST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
